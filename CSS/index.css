@@ -1,0 +1,24 @@
+/*배경화면*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.background {
+  background-image: url("../img/6.boom main page(img)/boommain.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*DEVOLOPER SAY*/
+.footer {
+  position: absolute;
+  left: 46%;
+  top: 95%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+}
