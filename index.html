@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
-    <style>
+    <style media="screen">
 
           /*배경화면*/
       body, html {
@@ -13,13 +13,66 @@
       }
 
       .background {
+        overflow: hidden;  /*하위 태그에서 넘쳐흐른것을 닦아준다.*/
         background-image: url("./boommain.png");
         height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
+        background-position: center; /*배경화면 위치*/
+        background-repeat: no-repeat; /*반복금지*/
         background-size: cover;
+        perspective: 80px;
+
+      }
+      .poster1{
+          top:23%;
+          left:22%;
+          position:absolute;
+          border:2px solid;
+          width: 80px;
+          height: 120px;
+          background-color:white;
+          transform:rotate3d(-20,70,50,30deg);
       }
 
+      .poster2{
+        top:41%;
+        left:22%;
+        position:absolute;
+        border:2px solid;
+        width: 80px;
+        height: 120px;
+        background-color:white;
+        transform:rotate3d(-20,70,50,30deg);
+      }
+      /*go to shop*/
+      .gotoshop{
+          z-index: 50;
+          position:absolute;
+          width: 300px;
+          height: 150px;
+          left:43%;
+          top:70%;
+          background-color: white;
+          transform:rotateY(0deg);
+          transition:0.5s;
+          border-radius: 100px;
+          border-style: outset;
+
+      }
+      .gotoshopbutton{
+        position:absolute;
+        top:10%;
+        left:14%;
+        font-size:5rem;
+        text-decoration: none;
+        text-align: center;
+        color: #09612a;
+        transform:scale(1);
+        transition:3s;
+
+      }
+      .gotoshopbutton:hover{
+        transform:scale(1.2);
+      }
       /*DEVOLOPER SAY*/
       .footer {
         position: absolute;
@@ -29,6 +82,14 @@
         font-size: 0.8rem;
         color: white;
         font-family: 'Dancing Script', cursive;
+        transform:scale(1);
+        transition:3s;
+        }
+      .footer:hover{
+          transform:scale(1.5);
+        }
+    .turn .gotoshop{
+          transform : rotateY(360deg);
         }
     </style>
 
@@ -36,6 +97,21 @@
   </head>
   <body>
     <div class="background">
+      <div class="poster1">
+
+      </div>
+      <div class="poster2">
+
+      </div>
+      <div class="gotoshop">
+        <script type="text/javascript">
+          var gotoshop = document.querySelector('.gotoshop');
+          gotoshop.addEventListener('click',function(){
+            document.body.classList.toggle('turn');
+          }) /*명령문과 가까이 있어야된다.*/
+        </script>
+        <a class="gotoshopbutton" href="./shop.html">SHOP</a>
+      </div>
       <div class="footer">
         design by People.corp
       </div>
