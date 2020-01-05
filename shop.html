@@ -4,15 +4,16 @@
     <meta charset = "utf-8">
     <style>
     .slideshow{
+        transform:scalex(2.4);
         margin:0 auto;
         padding-top:0px;
-        height: 700px;
+        height: 100%;
         background:white;
         box-sizing:border-box;
     }
     .content{
         margin: auto;
-        width:218px;
+        width:160px;
         perspective:1000px;
         position: relative;
         padding-top: 50px;
@@ -22,11 +23,10 @@
         width: 100%;
         position: absolute;
         float: right;
-        animation:rotar 20s infinite linear;
+        animation:rotar 30s infinite linear;
         transform-style: preserve-3d;
     }
     .content-carrousel:hover{
-        animation-play-state:paused;
         cursor:pointer;
     }
     .content-carrousel figure{
@@ -40,28 +40,37 @@
         transform: rotateY(0deg) translateZ(300px);
     }
         .content-carrousel figure:nth-child(2){
-        transform: rotateY(40deg) translateZ(300px);
+        transform: rotateY(30deg) translateZ(300px);
     }
     .content-carrousel figure:nth-child(3){
-        transform: rotateY(80deg) translateZ(300px);
+        transform: rotateY(60deg) translateZ(300px);
     }
     .content-carrousel figure:nth-child(4){
-        transform: rotateY(120deg) translateZ(300px);
+        transform: rotateY(90deg) translateZ(300px);
     }
     .content-carrousel figure:nth-child(5){
-        transform: rotateY(160deg) translateZ(300px);
+        transform: rotateY(120deg) translateZ(300px);
     }
     .content-carrousel figure:nth-child(6){
-        transform: rotateY(200deg) translateZ(300px);
+        transform: rotateY(150deg) translateZ(300px);
     }
     .content-carrousel figure:nth-child(7){
-        transform: rotateY(240deg) translateZ(300px);
+        transform: rotateY(180deg) translateZ(300px);
     }
     .content-carrousel figure:nth-child(8){
-        transform: rotateY(280deg) translateZ(300px);
+        transform: rotateY(210deg) translateZ(300px);
     }
     .content-carrousel figure:nth-child(9){
-        transform: rotateY(320deg) translateZ(300px);
+        transform: rotateY(240deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(10){
+        transform: rotateY(270deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(11){
+        transform: rotateY(300deg) translateZ(300px);
+    }
+    .content-carrousel figure:nth-child(12){
+        transform: rotateY(330deg) translateZ(300px);
     }
     .shadow{
         position: absolute;
@@ -85,6 +94,9 @@
             transform:rotateY(360deg);
         }
     }
+    .shadow img {
+      top:50%;
+    }
     .homebox{
       text-align: center;
       position:absolute;
@@ -105,24 +117,31 @@
             <section class="slideshow">
                 <div class="content">
                     <div class="content-carrousel">
-                        <figure class="shadow"><img src="image1.jpg">
+                        <figure class="shadow"><img src="1.jpg">
                         </figure>
-                        <figure class="shadow"><img src="image2.jpg">
+                        <figure class="shadow"><img src="2.jpg">
                         </figure>
-                        <figure class="shadow"><img src="image3.jpg">
+                        <figure class="shadow"><img src="3.jpg">
                         </figure>
-                        <figure class="shadow"><img src="image4.jpg">
+                        <figure class="shadow"><img src="4.jpg">
                         </figure>
-                        <figure class="shadow"><img src="image5.jpg">
+                        <figure class="shadow"><img src="5.jpg">
                         </figure>
-                        <figure class="shadow"><img src="image6.jpg">
+                        <figure class="shadow"><img src="6.jpg">
                         </figure>
-                        <figure class="shadow"><img src="image7.jpg">
+                        <figure class="shadow"><img src="7.jpg">
                         </figure>
-                        <figure class="shadow"><img src="image8.jpg">
+                        <figure class="shadow"><img src="8.jpg">
                         </figure>
-                        <figure class="shadow"><img src="image9.jpg">
+                        <figure class="shadow"><img src="9.jpg">
                         </figure>
+                        <figure class="shadow"><img src="10.jpg">
+                        </figure>
+                        <figure class="shadow"><img src="11.jpg">
+                        </figure>
+                        <figure class="shadow"><img src="12.jpg">
+                        </figure>
+
                 </div>
                 </div>
             </section>
