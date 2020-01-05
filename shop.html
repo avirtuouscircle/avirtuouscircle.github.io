@@ -22,7 +22,7 @@
         width: 100%;
         position: absolute;
         float: right;
-        animation:rotar 15s infinite linear;
+        animation:rotar 20s infinite linear;
         transform-style: preserve-3d;
     }
     .content-carrousel:hover{
@@ -31,8 +31,8 @@
     }
     .content-carrousel figure{
         width:100%;
-        height: 550px;
-        border:1px solid #4d444d;
+        height: 530px;
+        border:1px solid gray;
         overflow: hidden;
         position: absolute;
     }
@@ -65,7 +65,7 @@
     }
     .shadow{
         position: absolute;
-        box-shadow: 0px 0px 20px 0px #000;
+        box-shadow: 0px;
         border-radius :2px;
     }
     .content-carrousel img{
@@ -76,7 +76,7 @@
     }
     .content-carrousel img:hover{
         transform: scale(1.2);
-        transition: all 300ms;
+        transition: all 500ms;
     }
     @keyframes rotar{
         from {
@@ -84,6 +84,19 @@
         } to {
             transform:rotateY(360deg);
         }
+    }
+    .homebox{
+      text-align: center;
+      position:absolute;
+      top:10px;
+      left:10px;
+      width:100px;
+      height:50px;
+    }
+    .home {
+      font-size: 30px;
+      color:gray;
+      text-decoration: none;
     }
     </style>
 
@@ -113,5 +126,8 @@
                 </div>
                 </div>
             </section>
+            <div class="homebox">
+              <a class="home"href="index.html">home</a>
+            </div>
         </body>
     </html>
