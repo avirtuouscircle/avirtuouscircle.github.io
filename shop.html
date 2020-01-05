@@ -3,8 +3,11 @@
     <title>Boom ShowRoom</title>
     <meta charset = "utf-8">
     <style>
+    body {
+      display: block;
+    }
     .slideshow{
-        transform:scalex(2.4);
+        transform:scalex(1.0);
         margin:0 auto;
         padding-top:0px;
         height: 100%;
@@ -13,8 +16,8 @@
     }
     .content{
         margin: auto;
-        width:160px;
-        perspective:1000px;
+        width:150px;
+        perspective:700px;
         position: relative;
         padding-top: 50px;
     }
@@ -31,7 +34,7 @@
     }
     .content-carrousel figure{
         width:100%;
-        height: 530px;
+        height: 440px;
         border:1px solid gray;
         overflow: hidden;
         position: absolute;
@@ -84,7 +87,7 @@
         transition: all 300ms;
     }
     .content-carrousel img:hover{
-        transform: scale(1.2);
+        transform: scale(1.3);
         transition: all 500ms;
     }
     @keyframes rotar{
@@ -94,11 +97,7 @@
             transform:rotateY(360deg);
         }
     }
-    .shadow img {
-      top:50%;
-    }
     .homebox{
-      text-align: center;
       position:absolute;
       top:10px;
       left:10px;
@@ -106,6 +105,7 @@
       height:50px;
     }
     .home {
+      text-align: center;
       font-size: 30px;
       color:gray;
       text-decoration: none;
@@ -117,11 +117,11 @@
             <section class="slideshow">
                 <div class="content">
                     <div class="content-carrousel">
-                        <figure class="shadow"><img src="1.jpg">
+                        <figure class="shadow"><img src="1.png">
                         </figure>
-                        <figure class="shadow"><img src="2.jpg">
+                        <figure class="shadow"><img src="2.png">
                         </figure>
-                        <figure class="shadow"><img src="3.jpg">
+                        <figure class="shadow"><img src="3.png">
                         </figure>
                         <figure class="shadow"><img src="4.jpg">
                         </figure>
@@ -141,10 +141,12 @@
                         </figure>
                         <figure class="shadow"><img src="12.jpg">
                         </figure>
-
                 </div>
                 </div>
             </section>
+            <div class="middle">
+
+            </div>
             <div class="homebox">
               <a class="home"href="index.html">home</a>
             </div>
